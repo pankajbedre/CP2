@@ -11,8 +11,8 @@ int main()
             GCD_Num = i; 
     }   
     
-    for(k=1; k<=n2; k++) {
-        for(j=1; j<=n1; i++) {
+    for(k=n1; k>=-1; k--) {
+        for(j=n2; j>=0;  j--) {
             if(k*n1 + j*n2 == GCD_Num) {
                 printf("%d = X, %d = Y, %d = D", k,j, GCD_Num);
             }
