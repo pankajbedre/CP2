@@ -8,13 +8,10 @@ int main()
     for (i = m; i>0; i--) {
         fact = fact * i;
     }
-    printf("%d", fact);
-    while(n*b < fact) {
-        if (n*b == fact) {
-            printf("%d divides %d", n, fact);
-            break;
-        } 
-        b++;
-    }
+        if (fact%n == 0) {
+            printf("%d divides %d", n, m);
+        } else {
+            printf("%d does not divides %d", n, m);
+        }
     return 0;
 }  
